@@ -1,0 +1,29 @@
+@import'./mixin.scss';
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    .ball1{
+        @include ball;
+        @include keyF;
+        @include animation(5s,1s);
+        @include color(red);
+    }
+    .ball2{
+        @include ball;
+        @include keyF;
+        @include animation(6s,1s);
+        @include color(yellow);
+    }
+    .ball3{
+        @include ball;
+        @include keyF;
+        @include animation(4s,1s);
+        @include color(lightgreen);
+    }
+    
+}
